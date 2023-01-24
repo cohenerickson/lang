@@ -1,0 +1,30 @@
+
+input
+
+class Bob{
+	public int age;
+	public Bob() {
+		age = 25;
+	}
+
+	public void addAge(years) {
+		age+=years;
+	}
+}
+
+Bob bob = new Bob();
+bob.addYears(10);
+
+becomes
+
+function BobConstructor(selfPointer) {
+	selfPointer -> age = 25 // change the memory at a certain offset away from selfPointer that coresponds to age variable
+}
+
+function BobAddAge(self, years){
+	self->age += years;
+}
+
+int bobAdr = malloc(Bob) // allocate space for bob on the stack
+BobConstructor(bobAdr); // call constructor
+BobAddAge(bobAdr, 10); // add years

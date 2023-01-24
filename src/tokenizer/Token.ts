@@ -1,4 +1,4 @@
-type TokenType = "Identifier" | "OpenParenToken" | "CloseParenToken" | "NumericLiteral" | "PlusToken" | "MinusToken";
+type TokenType = "Identifier" | "OpenParenToken" | "CloseParenToken" | "NumericLiteral" | "PlusToken" | "MinusToken" | "AccessorToken";
 
 export default class Token {
   type: TokenType;

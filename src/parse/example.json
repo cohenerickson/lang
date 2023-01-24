@@ -1,0 +1,29 @@
+INPUT:
+Program.out(1);
+
+OUTPUT:
+  [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "Program"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "out"
+          }
+        },
+        "arguments": [
+          {
+            "type": "NumericLiteral",
+            "value": "1"
+          }
+        ]
+      }
+    }
+  ]

@@ -46,6 +46,12 @@ export default class Tokenizer {
         continue;
       }
 
+      if (char === ".") {
+        this.tokens.push(new Token("AccessorToken"));
+        i++;
+        continue;
+      }
+
       const NUMBERS = /[0-9]/;
       if (NUMBERS.test(char)) {
         let value = "";

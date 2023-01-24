@@ -5,7 +5,7 @@ function vector(array: any[]) {
   ];
 }
 
-function toWasmType(type: "int" | "float") {
+function toWasmType(type: "int" | "float"): "i32" | "f32" {
   switch (type) {
     case 'int':
       return 'i32';
